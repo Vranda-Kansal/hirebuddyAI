@@ -3,14 +3,15 @@
 /* default (light mode) */
 :root {
     --background: #111827;
-    --text: #111111;
-    --font-weight: 400;
+    --text: #ffffff;
+    --font-weight: 500;
 }
 
 /* dark mode */
 .dark {
     --background: #111827;
     --text: #ffffff;
+    --font-weight: 500;
 }
 
 /* apply globally */
