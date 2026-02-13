@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function FeatureCard() {
     return (
         <div
-            className="bg-[#1f2937] text-white font-medium font-mono flex flex-col rounded-xl hover:ring-3 hover:ring-purple-500">
+            className="bg-[#1f2937] text-white font-medium font-mono flex flex-col max-w-md rounded-xl hover:ring-3 hover:ring-purple-500">
 
             <div className="relative w-auto h-62 rounded-xl">
                 <Image
                     src="/ai_interview.png"
-                    alt="jdnfjsdn"
+                    alt="feature pic"
                     fill
                     className="rounded-t-xl shadow-md shadow-gray-600"
                 />
