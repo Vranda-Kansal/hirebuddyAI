@@ -1,7 +1,12 @@
+import FeatureCard from "@/app/_components/FeatureCard";
+
 export default function Home() {
     return (
-        <h1 className="text-3xl font-bold text-white">
-            Hello world!
-        </h1>
+        <div>
+            <div className="w-full flex justify-evenly my-[3rem]">
+                <FeatureCard/>
+                <FeatureCard/>
+            </div>
+        </div>
     )
 }
