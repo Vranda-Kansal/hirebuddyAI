@@ -21,7 +21,7 @@ export default function FeatureCard() {
                 <li>✅ Detailed performance feedback & improvement tips</li>
             </ul>
             <button
-                className="bg-[#625df6] p-[0.5em] rounded-b-xl font-bold ring-1 ring-purple-500 inset-shadow-xs inset-shadow-purple-300">Take
+                className="bg-[#625df6] p-[0.5em] rounded-b-xl font-bold ring-1 ring-purple-500 inset-shadow-xs inset-shadow-purple-300 cursor-pointer">Take
                 now
             </button>
         </div>
