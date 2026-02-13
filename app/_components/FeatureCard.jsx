@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function FeatureCard() {
     return (
         <div
-            className="bg-[#1f2937] text-white font-medium font-mono flex flex-col max-w-md rounded-xl hover:ring-3 hover:ring-purple-500 shadow-[0_0_60px_rgba(255,255,255,0.3)]">
+            className="bg-[#1f2937] text-white font-medium font-mono flex flex-col max-w-md rounded-xl hover:ring-3 hover:ring-purple-500 shadow-[0_0_40px_rgba(255,255,255,0.3)]">
 
             <div className="relative w-auto h-62 rounded-xl">
                 <Image
