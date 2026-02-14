@@ -1,6 +1,7 @@
 
 import Image from "next/image";
 import FeatureCardButton from "@/app/_components/FeatureCardButton";
+import {getFeatureRoute} from "@/app/_config/routes";
 
 export default function FeatureCard({feature}) {
     return (
@@ -21,8 +22,7 @@ export default function FeatureCard({feature}) {
                     feature.points.map((bullet, i) => <li key={i}>✅ {bullet}</li>)
                 }
             </ul>
-            {/* Only the button is a Client Component! */}
-            <FeatureCardButton buttonText={feature.buttonText} />
+            <FeatureCardButton buttonText={feature.buttonText} route={getFeatureRoute(feature.cardId)} />
         </div>
     )
 }
