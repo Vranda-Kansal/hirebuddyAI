@@ -1,13 +1,13 @@
 import Image from "next/image";
 import {Mail, Linkedin, Github, Youtube} from 'lucide-react';
 
-export default function Footer() {
+export default function Footer({logoUrl}) {
     return (
         <footer>
             <div className="w-full max-w-screen-xl mx-auto">
                 <div className="flex py-13 justify-between items-center">
                     <a className="basis-full">
-                        <Image src='/logo.png' alt="logo Image" width={110} height={50}
+                        <Image src={logoUrl} alt="logo Image" width={110} height={50}
                                className='object-contain cursor-pointer'/>
                     </a>
                     <span className="text-sm text-gray-500 basis-full flex justify-center">© 2026 <a
