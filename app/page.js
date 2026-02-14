@@ -6,6 +6,12 @@ import connectDB from '@/lib/mongodb';
 import mongoose from 'mongoose';
 import Navbar from "@/app/_components/Navbar";
 
+
+// ⭐ THIS MAGIC LINE: Cache for 1 hour (3600 seconds)
+// First visit: shows loading.js skeleton immediately
+// Subsequent visits: instant! (uses cached version)
+export const revalidate = 3600;
+
 export default async function Home() {
     await connectDB();
 

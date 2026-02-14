@@ -7,7 +7,8 @@ export default function Footer({logoUrl}) {
             <div className="w-full max-w-screen-xl mx-auto">
                 <div className="flex py-13 justify-between items-center">
                     <a className="basis-full">
-                        <Image src={logoUrl} alt="logo Image" width={110} height={50}
+                        <Image src={logoUrl} alt="logo Image" width={110} height={50}    priority={false}
+                               quality={85}
                                className='object-contain cursor-pointer'/>
                     </a>
                     <span className="text-sm text-gray-500 basis-full flex justify-center">© 2026 <a

@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import FeatureCardButton from "@/app/_components/FeatureCardButton";
 
 export default function FeatureCard({feature}) {
     return (
@@ -12,6 +13,7 @@ export default function FeatureCard({feature}) {
                     alt="feature pic"
                     fill
                     className="rounded-t-xl shadow-md shadow-gray-600"
+                    quality={85}
                 />
             </div>
             <ul className="p-3">
@@ -19,9 +21,8 @@ export default function FeatureCard({feature}) {
                     feature.points.map((bullet, i) => <li key={i}>✅ {bullet}</li>)
                 }
             </ul>
-            <button
-                className="bg-[#625df6] p-[0.5em] rounded-b-xl font-bold ring-1 ring-purple-500 inset-shadow-xs inset-shadow-purple-300 cursor-pointer">{feature.buttonText}
-            </button>
+            {/* Only the button is a Client Component! */}
+            <FeatureCardButton buttonText={feature.buttonText} />
         </div>
     )
 }

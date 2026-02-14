@@ -9,6 +9,10 @@ const nextConfig = {
         hostname: 'res.cloudinary.com',
       },
     ],
+    // Image optimization settings
+    formats: ['image/webp', 'image/avif'], // Modern formats
+    // ⭐ ADD THIS LINE:
+    qualities: [75, 85, 90], // Support quality 75, 85, and 90
   },
 };
 
